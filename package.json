@@ -1,0 +1,32 @@
+{
+  "name": "dsh-tech-deco",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal tech HUD decoration layered on shell.overlay: corner marks, ticks, scan line, status plate. Zero host modification.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "CC-BY-NC-ND-4.0"
+}
